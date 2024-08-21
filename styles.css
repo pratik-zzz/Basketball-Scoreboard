@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+#container {
+    height: 400px;
+    width: 575px;
+    background-color: #1B244A;
+    margin-top: 200px;
+    border-radius: 5px;
+}
+
+#score-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    height: 85%;
+}
+
+h3 {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.score {
+    background-color: #080001;
+    width: 155px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.score p {
+    margin: 20px 0 0 0;
+}
+
+#score-headings {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#scores {
+    display: flex;
+    justify-content: space-evenly;
+    color: #F94F6D;
+    font-size: 90px;
+    margin: -20px 0;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+}
+
+#point-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#home-point-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 155px;
+    height: 45px;
+}
+
+#point-buttons div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #9AABD8;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    color: #9AABD8;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}       
+
+#point-buttons div div:hover, #new-game-btn:hover {
+    background-color: #9AABD8;
+    color: #1B244A;
+    cursor: pointer;
+}
+
+#guest-point-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 155px;
+    height: 45px;
+}
+
+#new-game-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+#new-game-btn {
+    font-size: 17px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: solid 1px #9AABD8;
+    color: #9AABD8;
+    background-color: #1B244A;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.highlight {
+    color: #fc6480;
+    text-shadow: 0 0 10px #ff6b86;
+}

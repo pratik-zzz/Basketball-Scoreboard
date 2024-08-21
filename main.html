@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    <title>Basketball Scoreboard</title>
+</head>
+<body>
+    <div id="container">
+        <div id="score-container">
+            <div id="score-headings">
+                <div>
+                    <h3>HOME</h3>
+                </div>
+                <div>
+                    <h3>GUEST</h3>
+                </div>
+            </div>
+            <div id="scores">
+                <div class="score" id="home-score">
+                    <p id="home-score-text">0</p>
+                </div>
+                <div class="score" id="guest-score">
+                    <p id="guest-score-text">0</p>
+                </div>
+            </div>
+            <div id="point-buttons">
+                <div id="home-point-buttons">
+                    <div onclick="incrementHomeScoreBy1()">+1</div>
+                    <div onclick="incrementHomeScoreBy2()">+2</div>
+                    <div onclick="incrementHomeScoreBy3()">+3</div>
+                </div>
+                <div id="guest-point-buttons">
+                    <div onclick="incrementGuestScoreBy1()">+1</div>
+                    <div onclick="incrementGuestScoreBy2()">+2</div>
+                    <div onclick="incrementGuestScoreBy3()">+3</div>
+                </div>
+            </div>
+        </div>
+        <div id="new-game-btn-container">
+            <button id="new-game-btn" onclick="resetScore()">New Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
